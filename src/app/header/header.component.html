@@ -1,4 +1,4 @@
-<div *ngIf="!mobile" id="header-wrapper">
+<div *ngIf="!mobile" id="header-wrapper" (window:resize)="onResize($event)" >
     <div class="row">
         <div class="col-6">
             <img id="logo" src="./assets/imgs/icon.png" routerLink="/products"/>

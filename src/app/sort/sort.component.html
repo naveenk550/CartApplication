@@ -1,16 +1,16 @@
-<div *ngIf="!mobile">
+<div *ngIf="!mobile" id="sort-wrapper">
         <div class="row">
-            <div class="col-1">
-                <p class="font-bold">Sort By:</p>
+            <div class="col-2">
+                <h4 class="font-bold">Sort By:</h4>
             </div>
             <div class="col-3">
-                <p id="sortHL" class="sort-option active"><button  (click) = 'sortHigh()'>Price -- High Low</button></p>
+                <p id="sortHL" class="sort-option"><a  href="javascript:void(0)" (click) = 'sortHigh()'>Price -- High Low</a></p>
             </div>
             <div class="col-3">
-                <p id="sortLH" class="sort-option"><button  (click) = 'sortLow()'>Price -- Low High</button></p>
+                <p id="sortLH" class="sort-option"><a href="javascript:void(0)" (click) = 'sortLow()'>Price -- Low High</a></p>
             </div>
             <div class="col-3">
-                <p id="sortD" class="sort-option"><button (click) = 'sortDiscount()'>Discount</button></p>
+                <p id="sortD" class="sort-option"><a href="javascript:void(0)" (click) = 'sortDiscount()'>Discount</a></p>
             </div>
         </div>
     </div>

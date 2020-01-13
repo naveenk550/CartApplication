@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,HostListener } from '@angular/core';
 import { DataService } from '../services/data.service';
 
 @Component({
@@ -25,8 +25,13 @@ export class HeaderComponent implements OnInit {
       error => console.log(error));
   }
 
-  // navigateToCart(){
-  //   this.
-  // }
-
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {    
+    if (event.target.innerWidth <= 400) { // 768px portrait
+      this.mobile = true;
+    }
+    else{
+      this.mobile = false;
+    }
+  }
 }
