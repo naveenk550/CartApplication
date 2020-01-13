@@ -70,6 +70,20 @@ export class CartComponent implements OnInit {
     this.calculatePrice();
   }
 
+  removeFullFromCart(item){
+    // based on the item id, remove one item from this.prod
+    for(var i=0; i<this.prod.length; i++){
+      if(this.prod[i].id == item.id){
+        this.prod.splice(this.prod.indexOf(this.prod[i]),item.quantity)
+        break;
+      }
+    }
+    this.prod.forEach((val, index) => {
+      this.datas.changeMessage(this.prod);
+    })
+    this.calculatePrice();
+  }
+
   calculatePrice(){
     this.overallPrice = 0;
     this.discountPrice = 0;
