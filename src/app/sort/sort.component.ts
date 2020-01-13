@@ -29,13 +29,13 @@ export class SortComponent implements OnInit {
       this.mobile = false;
     }
   }
-  sortHigh(self){
+  sortHigh(){
     this.sortFilter.sendSort('high');
   }
-  sortLow(self){
+  sortLow(){
     this.sortFilter.sendSort('low');
   }
-  sortDiscount(self){
+  sortDiscount(){
     this.sortFilter.sendSort('Discount');
   }
 }
