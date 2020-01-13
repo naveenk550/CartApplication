@@ -1,0 +1,14 @@
+div#sort-wrapper {
+    padding: 10px;
+    .font-bold {
+        font-weight: bold;
+    }
+    p.sort-option {
+        cursor: pointer;
+    }
+    p.active {
+        color: #0069D8;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,18 @@
+#search-icon-wrapper {
+    #search-icon {
+        float: right;
+        &::before {
+            font-size: 1.6rem;
+            color: #FFF;
+            vertical-align: -webkit-baseline-middle;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+#search-bar {
+    div.btn-group {
+        width: 100%;
+    }
+}

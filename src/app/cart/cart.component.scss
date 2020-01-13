@@ -1,0 +1,52 @@
+div.padding-top {
+    padding-top: 25px;
+}
+div.productList {
+    padding: 10px;
+    border: 1px solid #000000;
+    margin-bottom: 15px;
+    img {
+        background-color: #DCDCDC;
+    }
+    p.product-name {
+        font-weight: bold;
+    }
+    p.product-extra-info {
+        span {
+            display: inline-block;
+            &.discount {
+                color: #2da02d;
+                font-weight: bold;
+            }
+            &.mrp {
+                color: #dcdcdc;
+                text-decoration: line-through;
+                display: inline-block;
+                padding: 0px 10px;
+            }
+        }
+    }
+    div.quantity-info-wrapper {
+        input.quantity-box {
+            display: inline-block;
+            width: 60px;
+            text-align: center;
+            pointer-events: none;
+        }
+        i {
+            cursor: pointer;
+            padding: 0px 5px;
+        }
+        input.quantity-box, i {
+            display: inline-block !important;
+        }
+    }
+}
+div#no-product-wrapper {
+    text-align: center;
+    padding-top: 50px;
+    h4,a {
+        width: 100%;
+        display: block;
+    }
+}

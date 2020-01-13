@@ -1,0 +1,16 @@
+<!-- HEADER COMPONENT W/ SEARCH AND CART -->
+<app-header></app-header>
+<!-- DASHBOARD COMPONENT -->
+<div  class="row">
+    <div *ngIf="!mobile" class="col-md-12 col-xs-12" (window:resize)="onResize($event)" >
+        <app-desktop></app-desktop>
+    </div>
+    <div *ngIf="mobile" class="col-md-12 col-xs-12">
+        <app-mobile></app-mobile>
+        
+    </div>
+</div>
+<!-- LEFT COMPONENT W/ FILTER -->
+<!-- RIGHT COMPONENT W/ SORT AND PRODUT LIST-->
+
+<!-- FOOTER COMPONENT -->

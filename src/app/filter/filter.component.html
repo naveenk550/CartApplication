@@ -1,0 +1,15 @@
+<div *ngIf="!mobile">
+        <h2> Filters</h2>
+<ng5-slider [(value)]="selectedMin" [(highValue)]="selectedMax" [options]="options"></ng5-slider>
+<div id="search-btn">
+    <p>Price</p>
+    <button type="button" class="btn btn-primary" (click)="filterProducts();">Apply</button>
+</div>
+</div>
+
+<div *ngIf="mobile" class="row">
+        <div class="col-xs-12">
+        <ngbd-modal></ngbd-modal>
+        </div>
+    </div>
+   

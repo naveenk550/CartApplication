@@ -1,0 +1,11 @@
+<div id="search-bar" *ngIf="searchON">
+    <!-- Search form -->
+    <!-- <input class="form-control" type="text" placeholder="Search" aria-label="Search"> -->
+    <div class="btn-group">
+        <input id="searchinput" placeholder="search" type="search" class="form-control" (blur)="showHideSearch();" (keyup.enter)="sarchProductList();">
+        <span id="searchclear" class="glyphicon glyphicon-remove-circle" (click)="showHideSearch();"></span>
+    </div>
+</div>
+<div id="search-icon-wrapper" *ngIf="!searchON">
+    <i id="search-icon" class="fa fa-search" aria-hidden="true" (click)="showHideSearch();"></i>
+</div>

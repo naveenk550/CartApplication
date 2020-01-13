@@ -1,0 +1,16 @@
+
+
+<div class="row" #selector>
+    <div class="product_list col-md-4 col-xs-6" *ngFor="let p of products" >
+        <div class="image_placeholder" >
+                <img src="{{p.img_url}}" style="width:100px;height:100px">
+        </div>
+           <div class="product_name"> {{p.name}}</div>
+           <div class="product_details">
+                <i _ngcontent-mla-c11="" aria-hidden="true" class="fa fa-inr"></i><span class="price"> {{ p.price -  (p.price * p.discount)/100 }}</span>
+               <span class="mrp"> {{p.price}}</span>
+               <span class="discount">  {{p.discount}}% off</span>
+           </div>
+           <button type="button" class="btn btn-primary" (click) = 'addToCart(p)'>Add to cart</button>
+        </div>
+</div>

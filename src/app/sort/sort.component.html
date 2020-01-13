@@ -1,0 +1,21 @@
+<div *ngIf="!mobile">
+        <div class="row">
+            <div class="col-1">
+                <p class="font-bold">Sort By:</p>
+            </div>
+            <div class="col-3">
+                <p id="sortHL" class="sort-option active"><button  (click) = 'sortHigh()'>Price -- High Low</button></p>
+            </div>
+            <div class="col-3">
+                <p id="sortLH" class="sort-option"><button  (click) = 'sortLow()'>Price -- Low High</button></p>
+            </div>
+            <div class="col-3">
+                <p id="sortD" class="sort-option"><button (click) = 'sortDiscount()'>Discount</button></p>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="mobile" class="row">
+            <div class="col-xs-12">
+            <ngbd-modal-sort></ngbd-modal-sort>
+            </div>
+        </div>

@@ -1,0 +1,46 @@
+<div *ngIf="!mobile" id="header-wrapper">
+    <div class="row">
+        <div class="col-6">
+            <img id="logo" src="./assets/imgs/icon.png" routerLink="/products"/>
+        </div>
+        <div class="col-6">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-6">
+                    <app-search></app-search>
+                </div>
+                <div class="col-2">
+                    <div id="cart-detail-wrapper">
+                            <i id="cart-icon" class="fa fa-shopping-cart" aria-hidden="true" routerLink="/shoppingCart">
+                                <span id="product-count" *ngIf="productCount > 0">{{productCount}}</span>
+                            </i>
+                        </div>                            
+                    <!-- <app-cart></app-cart> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="mobile" id="header-wrapper-mobile">
+        <div class="row">
+            <div class="col-xs-6">
+                <img id="logo" src="./assets/imgs/home.png" routerLink="/products"/>
+            </div>
+            <div class="col-xs-6">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-6">
+                        <app-search></app-search>
+                    </div>
+                    <div class="col-2">
+                        <div id="cart-detail-wrapper">
+                                <i id="cart-icon" class="fa fa-shopping-cart" aria-hidden="true" routerLink="/shoppingCart">
+                                    <span id="product-count" *ngIf="productCount > 0">{{productCount}}</span>
+                                </i>
+                            </div>                            
+                        <!-- <app-cart></app-cart> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,20 @@
+div.product_list{
+    text-align: center;
+    margin: 5px 0;
+     div.product_details{
+        span {
+            display: inline-block;
+            margin-right:4px;
+            &.discount {
+                color: #2da02d;
+                font-weight: bold;
+            }
+        &.mrp{
+            color: #dcdcdc;
+            text-decoration: line-through;
+            display: inline-block;
+            padding: 0px 10px;
+         }
+     }
+}
+}
